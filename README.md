@@ -59,42 +59,6 @@ pip install -r requirements.txt
 
 ---
 
-## Usage
-
-1. Run the Flask app locally:
-
-```bash
-python app.py
-```
-
-2. Open your browser and go to:
-
-```
-http://127.0.0.1:5000
-```
-
-3. Upload CSV files of stock data or use the sample `upload.csv` to predict trends.
-
----
-
-## Deployment on Render
-
-1. Ensure `runtime.txt` is present at the root of the repo:
-
-```
-python-3.8.16
-```
-
-2. Set the start command in Render:
-
-```bash
-gunicorn app:app --bind 0.0.0.0:$PORT
-```
-
-3. Trigger a manual deploy in Render. The app will be live using Python 3.8 with pinned dependencies.
-
----
-
 ## Notes
 
 * Make sure your `requirements.txt` lists packages compatible with Python 3.8.
