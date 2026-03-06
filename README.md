@@ -88,7 +88,7 @@ For deployment on services like Render or Heroku:
 gunicorn app:app --bind 0.0.0.0:$PORT
 ```
 
-3. Push the repository to GitHub and connect it to your deployment platform.
+3. Push the repository to GitHub and connect it to deployment platform.
 
 ---
 
